@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
-  <title> Forks & Spoons </title>
   <meta name="keywords" content="Cheap restaurants in Wuse, Abuja
 	Affordable dining in Wuse
 	Budget-friendly eateries in Abuja
@@ -47,157 +44,458 @@ Wuse budget-friendly venues
 	<!--link to the CSS files for this menu type-->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 	<link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-2.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 6.21.4, nicepage.com">
-    <meta name="referrer" content="origin">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Bebas+Neue:400">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "images/logo.png"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Page 2">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="index.html" data-include-products="false" class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-2ea0"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="#" class="u-image u-logo u-image-1" data-image-width="811" data-image-height="700">
-          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./" style="padding: 10px 20px;">Home</a>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background-color: #fff8f0;
+      color: #222;
+    }
 
-           
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="MENU" style="padding: 10px 20px;">Menu </a>
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Location </a>
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+    header {
+      background-color: #ffc72c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    .bubble-logo {
+      border-radius: 50%;
+      width: 90px;
+      height: 80px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(243, 230, 91, 0.7);
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent);
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: linear-gradient(90deg, #ffde59, #ff914d);
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      margin: 2rem auto;
+      max-width: 800px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transform: rotate(-1.5deg);
+      font-family: 'Bubblegum Sans', 'Fredoka', cursive;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      background: #ff2e63;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transform: rotate(1.5deg);
+    }
+
+    .main-nav a:hover {
+      background: #fff;
+      color: #ff2e63;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      background: #ff2e63;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-family: 'Bubblegum Sans', cursive;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #ffde59, #ff914d);
+      padding: 1rem;
+      font-family: 'Bubblegum Sans', cursive;
+      z-index: 10;
+    }
+
+    .mobile-nav a {
+      background: #ff2e63;
+      color: white;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 2rem;
+      background-color: #fff;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .bubble-hero {
+      background: radial-gradient(circle, #ffde59, #ff914d);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transform: rotate(-1deg);
+      margin: 2rem;
+    }
+
+    .bubble-hero h1 {
+      font-family: 'Bubblegum Sans', 'Fredoka', cursive;
+      font-size: 3rem;
+      color: #ff2e63;
+      text-shadow: 2px 2px 0 #fff;
+      letter-spacing: 1px;
+      margin: 0 0 1rem;
+    }
+
+    .bubble-hero p {
+      font-family: 'Fredoka', 'Arial', sans-serif;
+      font-size: 1.5rem;
+      color: #222;
+      background: rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transform: rotate(1deg);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background-color: #d90007;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .cta:hover {
+      background-color: #a80005;
+    }
+
+    .about, .menu, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+@keyframes sketchIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-5deg) skew(-10deg, -5deg) translateX(-20px);
+    filter: blur(3px);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(3deg) skew(5deg, 3deg) translateX(10px);
+    filter: blur(0);
+  }
+  70% {
+    transform: rotate(-2deg) skew(-3deg, -2deg) translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) skew(0deg, 0deg) translateX(0);
+    filter: blur(0);
+  }
+}
+
+.bubble-hero h1 {
+  animation: sketchIn 1.2s ease forwards;
+  transform-origin: center;
+}
+
+    .menu-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .menu-item {
+      width: 200px;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* ------------------- Mobile Responsive Adjustments ------------------- */
+    @media (max-width: 768px) {
+      .main-nav {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+        margin-left: auto;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+
+      .bubble-hero {
+        transform: rotate(0deg);
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+      }
+
+      .bubble-hero h1 {
+        font-size: 2rem;
+      }
+
+      .bubble-hero p {
+        font-size: 1rem;
+        transform: rotate(0deg);
+      }
+
+      .hero img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem 0;
+      }
+
+      .cta {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .menu-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-item {
+        width: 90%;
+      }
+
+      .about, .menu, .contact {
+        padding: 1.5rem 1rem;
+      }
+
+      footer {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.about-mcd {
+  background: #fff;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(218 41 28 / 0.15);
+  font-family: 'Poppins', sans-serif;
+  color: #4a4a4a;
+  position: relative;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.about-mcd:hover {
+  transform: scale(1.03);
+}
+
+.about-mcd .content h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #DA291C; /* McDonald's red */
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+.about-mcd .content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 520px;
+}
+
+.about-mcd .content p strong {
+  color: #FFC72C; /* McDonald's yellow */
+}
+
+/* Decorative circles for McDonald’s vibe */
+.about-mcd::before,
+.about-mcd::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  z-index: 0;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.about-mcd::before {
+  width: 200px;
+  height: 200px;
+  background: #FFC72C;
+  top: -60px;
+  right: -60px;
+}
+
+.about-mcd::after {
+  width: 140px;
+  height: 140px;
+  background: #DA291C;
+  bottom: -50px;
+  left: -50px;
+  animation-delay: 2s;
+}
+
+/* Animations */
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-mcd {
+    padding: 2rem 1.5rem;
+  }
+  .about-mcd .content h2 {
+    font-size: 2.5rem;
+  }
+  .about-mcd .content p {
+    max-width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="bubble-logo" src="logo.png" alt="Forks & Spoons Logo" />
+    </div>
+    <div class="hamburger" id="hamburger">☰ Menu</div>
+    <nav class="main-nav">
+      <a href="https://forksandspoons.com.ng/index.html">Home</a>
+      <a href="https://forksandspoons.com.ng/About.html">About</a>
+      <a href="https://forksandspoons.com.ng/FORKS%20AND%20SPOONS%20MENU.pdf">Menu</a>
+      <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
+    </nav>
+    <nav class="mobile-nav" id="mobileMenu">
+      <a href="https://forksandspoons.com.ng/index.html">Home</a>
+      <a href="https://forksandspoons.com.ng/About.html">About</a>
+      <a href="https://forksandspoons.com.ng/FORKS%20AND%20SPOONS%20MENU.pdf">Menu</a>
+      <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <div class="bubble-hero">
+        <h1>Good Food, Good Mood</h1>
+        <p>Delicious meals at budget-friendly prices.</p>
+      </div>
+      <a href="https://forksandspoons.com.ng/FORKS%20AND%20SPOONS%20MENU.pdf" class="cta">View Menu</a>
+    </div>
+    <img src="v1.gif" alt="Delicious Meal" />
+  </section>
+
+ <section id="about" class="about-mcd">
+  <div class="content">
+    <h2>About Us</h2>
+    <p>Located in the heart of Wuse, <strong>Forks & Spoons</strong> serves hot and delicious meals made with fresh ingredients and love. Whether you're dining in or taking out, enjoy the best culinary experience on a budget.</p>
+  </div>
+</section>
+ <section class="hero">
+  
+      <a href="https://forksandspoons.com.ng/FORKS%20AND%20SPOONS%20MENU.pdf" class="cta">View Menu</a>
+    </div>
+    <img src="v3.gif" alt="Delicious Meal" />
+      <div class="hero-text">
+      <div class="bubble-hero">
+      <h1 style="color: #d90007;" > Fast Delivery </h1>
+      </div>
+  </section>
+<script> </script>
 
 
-</li></ul>
-          </div>
-          <div class="u-nav-container-collapse">
-            <div class="u-white u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style-light u-nav-link" href="index.html">Home</a>
-                </li><li  class="u-nav-item"><a class="u-button-style- u-nav-link"  href="About.html">About</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf">Menu </a>
-                
-                </li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-    <section class="u-clearfix u-image u-section-1" id="sec-1fd2" data-image-width="1920" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h3 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1"> Good Food Good Mood</h3>
-            <h1 class="u-custom-font u-text u-text-palette-3-base u-text-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"> FORKS &amp; Spoons <br>
-            </h1>
-            <p class="u-text u-text-body-alt-color u-text-3">4 Aminu Kano Cres, Wuse, Abuja 904101, Federal Capital Territory</p>
-            <a href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf " class="u-custom-font u-text u-text-palette-3-base u-text-4 u-button-style">View Menu</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="u-clearfix u-image u-section-3" id="carousel_c7a1" data-image-width="1920" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-        <div class="u-container-style u-expanded-width-xs u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-valign-top u-container-layout-1">
-            <h2 class="u-custom-font u-text u-text-body-alt-color u-text-default u-text-1">
-              <span class="u-text-palette-3-base">About </span> Us 
-            </h2>
-            <h3 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2"> Hot and Delicious</h3>
-            <p class="u-text u-text-body-alt-color u-text-3"> Forks and spoons, we take
-               pride in using only the freshest ingredients and preparing each dish with 
-               care and attention to detail. Our skilled chefs ensure that every bite is bursting 
-               with flavor and cooked to perfection. Whether you’re dining in or taking out, our
-                friendly staff is ready to provide you with exceptional service and a memorable
-                 dining experience.   &nbsp;</p>
-            <p class="u-text u-text-body-alt-color u-text-4">View Our  <a href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf " class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-3-base u-btn-1">Menu</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-image u-section-7" id="carousel_166b" data-image-width="1835" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-expanded-width-xs u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-custom-font u-text u-text-body-alt-color u-text-1">
-              <span class="u-text-palette-3-base">Address</span> and Hours
-            </h2>
-            <h3 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2">
-              Located in:Ground Floor, ATC Plaza,
-              Aminu Kano Crescent, Wuse II, Abuja.
-              
+  
 
 
-            </h3>
-            <p class="u-text u-text-body-alt-color u-text-3"> Sunday 5PM-9PM<br>Monday 11AM-10PM<br>Tuesday-Thursday 11:30AM-10:30PM &amp; 10AM-11PM<br>Friday 10AM-11PM<br>Saturday 10AM-11PM
-            </p>
-            <p class="u-text u-text-body-alt-color u-text-4">Open 24 Hours  <a href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf " class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-3-base u-btn-1">View Map </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-   
-   
-    <section class="u-clearfix u-image u-section-6" id="carousel_005c" data-image-width="1835" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-valign-top u-container-layout-1">
-            <h2 class="u-custom-font u-text u-text-body-alt-color u-text-default u-text-1">
-              <span class="u-text-palette-3-base">Contact </span> Us 
-            </h2>
-            <h3 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2"> Hotline: +234 808 839 1633
-            </h3>
-            <p class="u-text u-text-body-alt-color u-text-3">View <a href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf " class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-3-base u-btn-1">Menu </a>
-            </p>
-          </div>
-        </div>
-       
-      </div>
-    </section>
-    
-    <section class="u-clearfix u-image u-section-1" id="sec-1fd2" data-image-width="1920" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <span class="u-text-palette-3-base">Call us  </span> +234 808 839 1633
-            </h2>
-            <h3 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2"> Hot and Delicious</h3>
-            <p class="u-text u-text-body-alt-color u-text-3"> 
-              Join us at Forks and spoons and indulge in the ultimate culinary experience. We guarantee that our delicious and bud tasty meals will leave you coming back for more. &nbsp;</p>
-            <p class="u-text u-text-body-alt-color u-text-4">View Our  <a href="https://gigx267.github.io/Forks-Spoon-/FORKS%20AND%20SPOONS%20MENU.pdf " class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-3-base u-btn-1">Menu</a>
-        </div>
-      </div>
-    </section>
+
+  <script>
+    // Toggle mobile menu
+    document.getElementById('hamburger').addEventListener('click', function () {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
