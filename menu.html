@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Forks & Spoons - Wuse, Abuja</title>
+  <meta name="keywords" content="Forks and Spoons menu, Wuse restaurant menu, Abuja food prices, affordable meals Abuja, Nigerian restaurant menu">
+  <meta name="description" content="Explore our delicious menu at Forks & Spoons in Wuse, Abuja. Affordable prices, fresh ingredients, and authentic flavors.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka+One&family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --gold-primary: #D4AF37;
+      --gold-secondary: #FFD700;
+      --gold-light: #F8F0C6;
+      --dark-bg: #1A1A1A;
+      --text-dark: #333;
+      --text-light: #fff;
+      --luxury-accent: #8B4513;
+      --section-bg: #FFFDF5;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--section-bg);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    
+    /* Luxury animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    /* Header styles - Luxury Edition */
+    header {
+      background: var(--dark-bg);
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      border-bottom: 2px solid var(--gold-primary);
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .logo img {
+      height: 70px;
+      width: 70px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
+    }
+    
+    .logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      letter-spacing: 1px;
+    }
+    
+    /* Navigation - Luxury Edition */
+    .main-nav {
+      display: flex;
+      gap: 0.8rem;
+    }
+    
+    .main-nav a {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .main-nav a:hover::after,
+    .main-nav a.active::after {
+      width: 80%;
+    }
+    
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--gold-primary);
+    }
+    
+    .hamburger {
+      display: none;
+      font-size: 1.8rem;
+      color: var(--gold-primary);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .hamburger:hover {
+      background: rgba(212, 175, 55, 0.1);
+    }
+    
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: var(--dark-bg);
+      padding: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-top: 1px solid var(--gold-primary);
+      animation: fadeIn 0.4s ease;
+    }
+    
+    .mobile-nav a {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 1rem;
+      margin: 0.3rem 0;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+    }
+    
+    .mobile-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .mobile-nav a:hover::after,
+    .mobile-nav a.active::after {
+      width: 40%;
+    }
+    
+    .mobile-nav a:hover,
+    .mobile-nav a.active {
+      color: var(--gold-primary);
+      background: rgba(255,255,255,0.05);
+    }
+    
+    /* Menu Hero section - Luxury Edition */
+    .menu-hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cdn.dribbble.com/userupload/21533348/file/original-14ce681d6e023b473a2fe3ca1da7b077.gif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .menu-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .menu-hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--gold-primary);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .menu-hero-subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .luxury-divider {
+      width: 100px;
+      height: 3px;
+      background: var(--gold-primary);
+      margin: 1.5rem auto;
+      position: relative;
+    }
+    
+    .luxury-divider::before,
+    .luxury-divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      background: var(--gold-primary);
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .luxury-divider::before {
+      left: -20px;
+    }
+    
+    .luxury-divider::after {
+      right: -20px;
+    }
+    
+    /* Menu Categories Navigation - Luxury Edition */
+    .menu-categories {
+      padding: 1.5rem 2rem;
+      background-color: var(--dark-bg);
+      position: sticky;
+      top: 82px;
+      z-index: 90;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-bottom: 1px solid var(--gold-primary);
+    }
+    
+    .categories-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    
+    .category-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.7rem 1.3rem;
+      background-color: transparent;
+      color: var(--text-light);
+      border: 1px solid var(--gold-primary);
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .category-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+      transition: all 0.5s ease;
+    }
+    
+    .category-btn:hover::before {
+      left: 100%;
+    }
+    
+    .category-btn:hover, .category-btn.active {
+      background-color: var(--gold-primary);
+      color: var(--dark-bg);
+    }
+    
+    /* Menu Sections - Luxury Edition */
+    .menu-section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      color: var(--dark-bg);
+      margin-bottom: 1rem;
+      display: inline-block;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--gold-primary);
+    }
+    
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .menu-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.8rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border-left: 4px solid var(--gold-primary);
+    }
+    
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .menu-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(212, 175, 55, 0.03), transparent);
+      pointer-events: none;
+    }
+    
+    .item-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      color: var(--dark-bg);
+      margin-bottom: 0.8rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .item-title::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--gold-primary);
+    }
+    
+    .item-description {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1.2rem;
+      min-height: 40px;
+      font-weight: 300;
+    }
+    
+    .item-price {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--gold-primary);
+      text-align: right;
+    }
+    
+    /* Special items */
+    .special-item {
+      background: linear-gradient(135deg, var(--dark-bg), #2a2a2a);
+      color: white;
+      border-left: 4px solid var(--gold-primary);
+    }
+    
+    .special-item .item-title {
+      color: var(--gold-primary);
+    }
+    
+    .special-item .item-description {
+      color: rgba(255,255,255,0.8);
+    }
+    
+    .special-item .item-price {
+      color: var(--gold-light);
+    }
+    
+    /* Footer - Luxury Edition */
+    footer {
+      background: var(--dark-bg);
+      color: white;
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      margin-top: 3rem;
+      border-top: 2px solid var(--gold-primary);
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .footer-column h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--gold-primary);
+    }
+    
+    .footer-column p,
+    .footer-column a {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.8rem;
+      display: block;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 300;
+    }
+    
+    .footer-column a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 1px solid var(--gold-primary);
+      border-radius: 50%;
+      color: var(--gold-primary);
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--gold-primary);
+      color: var(--dark-bg);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+    }
+    
+    /* Floating elements */
+    .floating-elements {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .floating-elements .element {
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: rgba(212, 175, 55, 0.1);
+      animation: float 15s infinite linear;
+      border-radius: 50%;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gold-primary);
+      color: var(--dark-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 99;
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background: var(--dark-bg);
+      color: var(--gold-primary);
+      transform: translateY(-5px);
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 1024px) {
+      .menu-hero-title {
+        font-size: 3rem;
+      }
+      
+      .menu-hero-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .menu-categories {
+        top: 80px;
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .main-nav {
+        display: none;
+      }
+      
+      .hamburger {
+        display: block;
+      }
+      
+      .menu-categories {
+        top: 72px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1.5rem;
+      }
+      
+      .logo-text {
+        font-size: 1.5rem;
+      }
+      
+      .logo img {
+        height: 60px;
+        width: 60px;
+      }
+      
+      .menu-hero {
+        padding: 3rem 1.5rem;
+      }
+      
+      .menu-hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .menu-categories {
+        padding: 1rem 1.5rem;
+        position: static;
+      }
+      
+      .categories-container {
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
+      }
+      
+      .category-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      
+      .menu-section {
+        padding: 2rem 1.5rem;
+      }
+      
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+      }
+      
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        padding: 0.7rem 1rem;
+      }
+      
+      .logo-text {
+        font-size: 1.3rem;
+      }
+      
+      .logo img {
+        height: 50px;
+        width: 50px;
+      }
+      
+      .menu-hero {
+        padding: 2.5rem 1rem;
+      }
+      
+      .menu-hero-title {
+        font-size: 2rem;
+      }
+      
+      .menu-categories {
+        padding: 0.8rem 1rem;
+      }
+      
+      .menu-section {
+        padding: 1.5rem 1rem;
+      }
+      
+      .menu-item {
+        padding: 1.5rem;
+      }
+      
+      .item-title {
+        font-size: 1.3rem;
+      }
+      
+      footer {
+        padding: 3rem 1rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating elements background -->
+  <div class="floating-elements">
+    <span class="element" style="top: 10%; left: 5%; width: 15px; height: 15px; animation-delay: 0s;"></span>
+    <span class="element" style="top: 20%; left: 90%; width: 25px; height: 25px; animation-delay: 2s;"></span>
+    <span class="element" style="top: 40%; left: 15%; width: 20px; height: 20px; animation-delay: 4s;"></span>
+    <span class="element" style="top: 60%; left: 80%; width: 15px; height: 15px; animation-delay: 6s;"></span>
+    <span class="element" style="top: 80%; left: 10%; width: 30px; height: 30px; animation-delay: 8s;"></span>
+  </div>
+  
+  <!-- Back to top button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  
+  <header>
+    <div class="logo">
+      <img src="https://forksandspoons.com.ng/logo.png" alt="Forks & Spoons Logo">
+      <span class="logo-text">Forks & Spoons</span>
+    </div>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+      <a href="https://forksandspoons.com.ng/index.html">Home</a>
+      <a href="https://forksandspoons.com.ng/About.html">About</a>
+      <a href="https://forksandspoons.com.ng/menu.html" class="active">Menu</a>
+      <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
+    </nav>
+    <nav class="mobile-nav" id="mobileMenu">
+      <a href="https://forksandspoons.com.ng/index.html">Home</a>
+      <a href="https://forksandspoons.com.ng/About.html">About</a>
+      <a href="https://forksandspoons.com.ng/menu.html" class="active">Menu</a>
+      <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="menu-hero">
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Our Menu</h1>
+      <div class="luxury-divider"></div>
+      <p class="menu-hero-subtitle">Exquisite culinary experiences crafted with premium ingredients and served with elegance</p>
+    </div>
+  </section>
+  
+  <div class="menu-categories">
+    <div class="categories-container">
+      <button class="category-btn active" data-category="breakfast">Breakfast</button>
+      <button class="category-btn" data-category="starters">Starters</button>
+      <button class="category-btn" data-category="rice">Rice Dishes</button>
+      <button class="category-btn" data-category="pasta">Pasta & Noodles</button>
+      <button class="category-btn" data-category="soups">Soups</button>
+      <button class="category-btn" data-category="proteins">Proteins</button>
+       <button class="category-btn" data-category="peppersoup">Pepper Soup</button>
+     
+         <button class="category-btn" data-category="porridges">Porridges</button>
+      <button class="category-btn" data-category="swallows">Swallows</button>
+   
+        <button class="category-btn" data-category="sandwiches">Sandwiches & Shawarmas</button>
+        <button class="category-btn" data-category="grilled">Grilled</button>
+      
+      
+       
+    </div>
+  </div>
+  
+  <main class="menu-sections">
+    <!-- Breakfast Section -->
+    <section id="breakfast" class="menu-section">
+      <div class="section-header">
+        <h2 class="section-title">Breakfast</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3 class="item-title">English Scramble Eggs</h3>
+          <p class="item-description">Served with fresh artisanal bread and premium Tea</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Toasted Bread & Spanish Omelette</h3>
+          <p class="item-description">Served with our signature Tea blend</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Egg Sauce with Boiled or Fried Plantains</h3>
+          <p class="item-description">Choice of boiled or fried plantains with our special egg sauce</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Egg Sauce with boiled  Yam or Chips </h3>
+          <p class="item-description">Choice of boiled yam or yam chips with our special egg sauce</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Irish Charm with Chicken Sauce</h3>
+          <p class="item-description">A hearty breakfast option with rich chicken sauce</p>
+          <p class="item-price">₦8,000</p>
+        </div>
+         <div class="menu-item">
+          <h3 class="item-title">White Rice with Vegetable Sauce </h3>
+          <p class="item-description"></p>
+          <p class="item-price">₦6,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Sunny Side Up</h3>
+          <p class="item-description">Perfectly cooked sunny side up eggs</p>
+          <p class="item-price">₦1,500</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Egg Toast with Custard</h3>
+          <p class="item-description">Delicious egg toast served with creamy custard</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Penn Cake with Tea</h3>
+          <p class="item-description">Fluffy penn cake served with a cup of tea</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Chicken & Chaps</h3>
+          <p class="item-description">Tender chicken served with chapatis</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Spanish Omelette</h3>
+          <p class="item-description">Classic Spanish-style omelette</p>
+          <p class="item-price">₦2,500</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Cornbeef Omelette</h3>
+          <p class="item-description">Fluffy omelette filled with savory cornbeef</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Sardine Omelette</h3>
+          <p class="item-description">Omelette with delicious sardine filling</p>
+          <p class="item-price">₦3,500</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Tomato Pepper Onion Omelette</h3>
+          <p class="item-description">Fresh vegetable omelette with tomatoes, peppers and onions</p>
+          <p class="item-price">₦2,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Plain Omelette</h3>
+          <p class="item-description">Simple and delicious plain omelette</p>
+          <p class="item-price">₦1,500</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Starters Section -->
+    <section id="starters" class="menu-section" style="display: none;">
+      <div class="section-header">
+        <h2 class="section-title">Starters</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3 class="item-title">Peanuts</h3>
+          <p class="item-description">Lightly salted roasted peanuts</p>
+          <p class="item-price">₦ -</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Spring Rolls</h3>
+          <p class="item-description">Crispy spring rolls with savory filling</p>
+          <p class="item-price">₦ -</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Samoosa</h3>
+          <p class="item-description">Triangular pastry with spiced filling</p>
+          <p class="item-price">₦ -</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Groundnut</h3>
+          <p class="item-description">Freshly prepared groundnut</p>
+          <p class="item-price">₦ -</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Put-Put</h3>
+          <p class="item-description">Traditional Nigerian snack</p>
+          <p class="item-price">₦ -</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Peppered Gizzard</h3>
+          <p class="item-description">Our signature gizzard starter</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Peppered Beef </h3>
+          <p class="item-description">Tender beef pieces, perfectly seasoned</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Peppered Chicken</h3>
+          <p class="item-description">Juicy chicken pieces, marinated and grilled</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Peppered  Assorted </h3>
+          <p class="item-description">A combination of our meat starters</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Asun Starter</h3>
+          <p class="item-description">Spicy grilled goat meat, chopped</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Nkwobi</h3>
+          <p class="item-description">Spicy cow foot delicacy</p>
+          <p class="item-price">₦7,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Kate-emu</h3>
+          <p class="item-description">Premium starter delicacy</p>
+          <p class="item-price">₦19,000</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Rice Dishes Section -->
+    <section id="rice" class="menu-section" style="display: none;">
+      <div class="section-header">
+        <h2 class="section-title">Rice Dishes</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3 class="item-title">Singapore Rice</h3>
+          <p class="item-description">Flavorful Singapore-style fried rice</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Mexican Rice</h3>
+          <p class="item-description">Spicy Mexican-inspired rice dish</p>
+          <p class="item-price">₦6,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Chinese Rice</h3>
+          <p class="item-description">Classic Chinese fried rice</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Dirty Rice</h3>
+          <p class="item-description">Cajun-style rice with meats and spices</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Egg Fried Rice</h3>
+          <p class="item-description">Special Egg rice preparation</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Vegetable Rice</h3>
+          <p class="item-description">Rice cooked with fresh vegetables</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">White Rice</h3>
+          <p class="item-description">Steamed white rice</p>
+          <p class="item-price">₦2,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">White Rice with Stew</h3>
+          <p class="item-description">Steamed white rice served with Nigerian stew</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Coconut Rice</h3>
+          <p class="item-description">Aromatic rice cooked in coconut milk</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Asun Jellof </h3>
+          <p class="item-description">Spicy grilled goat meat with rice</p>
+          <p class="item-price">₦6,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Jollof Rice</h3>
+          <p class="item-description">Classic Nigerian jollof rice</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Brown  Rice</h3>
+          <p class="item-description">Classic Nigerian Brown  rice</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+         <div class="menu-item">
+          <h3 class="item-title">Beef and Sausage Rice</h3>
+          <p class="item-description">Classic Nigerian Beef and Sausage Rice </p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Fried Rice</h3>
+          <p class="item-description">Nigerian-style fried rice with vegetables</p>
+          <p class="item-price">₦4,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Native  Rice</h3>
+          <p class="item-description">Nigerian-style Native  rice with vegetables</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Seafood Rice</h3>
+          <p class="item-description">Local seafood rice with special sauce</p>
+          <p class="item-price">₦10,000</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pasta & Noodles Section -->
+    <section id="pasta" class="menu-section" style="display: none;">
+      <div class="section-header">
+        <h2 class="section-title">Pasta & Noodles</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3 class="item-title">Cream Pasta </h3>
+          <p class="item-description">Classic spaghetti with rich meat sauce</p>
+          <p class="item-price">₦6,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Seafood  Pasta </h3>
+          <p class="item-description">Classic spaghetti seafood with rich meat sauce</p>
+          <p class="item-price">₦10,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Vegetable Pasta /h3>
+          <p class="item-description">Spaghetti prepared Nigerian  style</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Jellof Pasta </h3>
+          <p class="item-description">Premium Jellof Pasta  preparation</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">spaghetti bolognese  </h3>
+            <p class="item-description">Spaghetti with rich meat sauce</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Alfredo Pasta </h3>
+            <p class="item-description">Creamy Alfredo sauce with spaghetti</p>
+          <p class="item-price">₦6,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Seafood Macaroni  </h3>
+            <p class="item-description">Macaroni with assorted seafood</p>
+          <p class="item-price">₦10,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Jellof Macaroni </h3>
+            <p class="item-description">Macaroni prepared Nigerian  style</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Native  Pasta </h3>
+            <p class="item-description">Nigerian-style pasta with vegetables</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+        <div class="menu-item">
+          <h3 class="item-title">Stir Fried  Noodles</h3>
+            <p class="item-description">Asian-style stir-fried noodles with vegetables</p>
+          <p class="item-price">₦2,000</p>
+        </div>
+         <div class="menu-item">
+          <h3 class="item-title">Singapore  Noodles</h3>
+            <p class="item-description">Flavorful Singapore-style noodles</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+ <div class="menu-item">
+          <h3 class="item-title">Vegetable  Noodles</h3>
+            <p class="item-description">Noodles cooked with fresh vegetables</p>
+          <p class="item-price">₦3,000</p>
+        </div>
+ <div class="menu-item">
+          <h3 class="item-title">Sardine Noodles</h3>
+            <p class="item-description">Noodles with delicious sardine filling</p>
+          <p class="item-price">₦6,000</p>
+        </div>
+ <div class="menu-item">
+          <h3 class="item-title">Brown Noodles</h3>
+            <p class="item-description">Healthy brown noodles with vegetables</p>
+          <p class="item-price">₦3,500</p>
+        </div>
+
+
+      </div>
+    </section>
+    
+   <!-- Soups Section -->
+<section id="soups" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Soups</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Fisherman Soup</h3>
+      <p class="item-price">₦20,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Seafood Okro</h3>
+      <p class="item-price">₦20,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Edikaikong Soup</h3>
+      <p class="item-price">₦7,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Vegetable Soup</h3>
+      <p class="item-price">₦2,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Afang Soup</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Ogbono Soup</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Ogbono Soup (Native)</h3>
+      <p class="item-price">₦8,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Native Soup</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Banga Soup</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Bitterleaf Soup</h3>
+      <p class="item-price">₦2,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Okra Soup</h3>
+      <p class="item-price">₦2,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Egusi Soup</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">White Soup</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Efo-ri-ro</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Oha Soup</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+  </div>
+</section>
+
+<!-- Proteins Section -->
+<section id="proteins" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Proteins</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Goat Meat</h3>
+      <p class="item-price">₦3,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken</h3>
+      <p class="item-price">₦3,000 / ₦12,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beef</h3>
+      <p class="item-price">₦2,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Assorted</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Cowtail</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+  </div>
+   <div class="menu-item">
+      <h3 class="item-title">Cowleg</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Catfish</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Titus Fish</h3>
+      <p class="item-price">₦3,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Croaker Fish</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Turkey</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+  </div>
+</section>
+    
+    
+    
+    <!-- Specials Section -->
+    <section id="specials" class="menu-section" style="display: none;">
+      <div class="section-header">
+        <h2 class="section-title">Specials</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item special-item">
+          <h3 class="item-title">Fisherman's Soup</h3>
+          <p class="item-description">Special fish soup with assorted seafood</p>
+          <p class="item-price">₦15,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Pepper Soup</h3>
+          <p class="item-description">Spicy pepper soup with choice of protein</p>
+          <p class="item-price">₦7,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Isi-ewu</h3>
+          <p class="item-description">Spicy goat head delicacy</p>
+          <p class="item-price">₦8,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Native Rice</h3>
+          <p class="item-description">Traditional native rice with special ingredients</p>
+          <p class="item-price">₦7,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Native Salad</h3>
+          <p class="item-description">Traditional Nigerian native salad</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Abacha</h3>
+          <p class="item-description">African salad with dried shredded cassava</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Ugba</h3>
+          <p class="item-description">Oil bean salad</p>
+          <p class="item-price">₦5,000</p>
+        </div>
+        <div class="menu-item special-item">
+          <h3 class="item-title">Nkwobi</h3>
+          <p class="item-description">Spicy cow foot delicacy</p>
+          <p class="item-price">₦7,000</p>
+        </div>
+      </div>
+    </section>
+<!-- Swallows Section -->
+<section id="swallows" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Swallows</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Poundo Yam</h3>
+      <p class="item-price">₦1,500</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Semovita</h3>
+      <p class="item-price">₦1,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Plantain Flour</h3>
+      <p class="item-price">₦1,500</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Eba</h3>
+      <p class="item-price">₦1,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Amala</h3>
+      <p class="item-price">₦1,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Wheat Meal</h3>
+      <p class="item-price">₦1,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Oat Meal</h3>
+      <p class="item-price">₦1,500</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pepper Soup Section -->
+<section id="peppersoup" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Pepper Soups</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Catfish Pepper Soup (Portion)</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Catfish Pepper Soup (Full)</h3>
+      <p class="item-price">₦12,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken Pepper Soup (Medium)</h3>
+      <p class="item-price">₦3,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken Pepper Soup (Large)</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">G/Meat Pepper Soup</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Assorted Pepper Soup</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+  </div>
+</section>
+<!-- Porridges Section -->
+<section id="porridges" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Porridges</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Plantain Porridge</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Yam Porridge</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Porridge Beans</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beans & Plantain Mixed</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beans & Yam Mixed</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beans & Rice Mixed</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sandwiches Section -->
+<section id="sandwiches" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Sandwiches & Burgers</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Club Sandwich</h3>
+      <p class="item-price">₦7,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken Sandwich</h3>
+      <p class="item-price">₦7,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Tuna Sandwich</h3>
+      <p class="item-price">₦6,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Vegetable Sandwich</h3>
+      <p class="item-price">₦4,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken Burger</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beef Burger</h3>
+      <p class="item-price">₦4,500</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken Shawarma</h3>
+      <p class="item-price">₦3,500 / ₦4,000 / ₦6,000 (sausage, double sausage)</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Beef Shawarma</h3>
+      <p class="item-price">₦3,500 / ₦4,500 / ₦6,000</p>
+    </div>
+  </div>
+</section>
+
+<!-- Grilled Section -->
+<section id="grilled" class="menu-section">
+  <div class="section-header">
+    <h2 class="section-title">Grilled</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3 class="item-title">Chicken (Full)</h3>
+      <p class="item-price">₦18,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Chicken (Parts)</h3>
+      <p class="item-price">₦5,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Turkey</h3>
+      <p class="item-price">₦8,000</p>
+    </div>
+    <div class="menu-item">
+      <h3 class="item-title">Barbeque</h3>
+      <p class="item-price">₦15,000</p>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Location</h3>
+        <p>Ground Floor, ATC Plaza, Aminu Kano Crescent, Wuse II, Abuja.</p>
+        <p>Abuja, Nigeria</p>
+        <p>Open: 10am - 11pm Daily</p>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="https://forksandspoons.com.ng/index.html">Home</a>
+        <a href="https://forksandspoons.com.ng/About.html">About</a>
+        <a href="https://forksandspoons.com.ng/menu.html">Menu</a>
+        <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <a href="tel:+2348123456789">+234 812 345 6789</a>
+        
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Forks & Spoons. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+      document.body.style.overflow = mobileMenu.style.display === 'flex' ? 'hidden' : '';
+    });
+    
+    // Close mobile menu when clicking a link
+    const mobileLinks = document.querySelectorAll('.mobile-nav a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mobileMenu.style.display === 'flex' && 
+          !e.target.closest('.mobile-nav') && 
+          !e.target.closest('.hamburger')) {
+        mobileMenu.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Category navigation
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const menuSections = document.querySelectorAll('.menu-section');
+    
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        // Update active button
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Show corresponding section
+        menuSections.forEach(section => {
+          if (section.id === category) {
+            section.style.display = 'block';
+            // Smooth scroll to section
+            setTimeout(() => {
+              section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Animate menu items when they come into view
+    const animateOnScroll = () => {
+      const menuItems = document.querySelectorAll('.menu-item');
+      
+      menuItems.forEach(item => {
+        const itemPosition = item.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (itemPosition < windowHeight - 100) {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }
+      });
+    };
+    
+    // Set initial styles for animated elements
+    document.querySelectorAll('.menu-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+    
+    // Run animation on load and scroll
+    window.addEventListener('load', () => {
+      animateOnScroll();
+      // Show breakfast section by default
+      document.getElementById('breakfast').style.display = 'block';
+    });
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Make category navigation sticky on scroll for mobile
+    window.addEventListener('scroll', () => {
+      const menuCategories = document.querySelector('.menu-categories');
+      if (window.innerWidth > 768) {
+        menuCategories.style.position = 'sticky';
+        menuCategories.style.top = '82px';
+      } else {
+        menuCategories.style.position = 'static';
+      }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      // Close mobile menu when resizing to larger screen
+      if (window.innerWidth > 900) {
+        mobileMenu.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+      
+      // Adjust sticky positioning
+      const menuCategories = document.querySelector('.menu-categories');
+      if (window.innerWidth > 768) {
+        menuCategories.style.position = 'sticky';
+        menuCategories.style.top = '82px';
+      } else {
+        menuCategories.style.position = 'static';
+      }
+    });
+  </script>
+</body>
+</html>
