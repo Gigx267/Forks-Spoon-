@@ -3,71 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Forks & Spoons -  Wuse, Abuja</title>
-  <meta name="keywords" content="Cheap restaurants in Wuse, Abuja
-	Affordable dining in Wuse
-	Budget-friendly eateries in Abuja
-	Inexpensive food options in Wuse
-	Best places to eat on a budget in Abuja
-	Wuse food joints
-Wuse street food
-Wuse local delicacies
-Wuse affordable meals
-Wuse budget-friendly restaurants
-Cheap event venues in Wuse, Abuja
-Affordable event spaces in Wuse
-Budget-friendly party halls in Abuja
-Inexpensive meeting rooms in Wuse
-Best places to host events on a budget in Abuja
-Wuse event venues
-Wuse party halls
-Wuse meeting rooms
-Wuse affordable event spaces
-Wuse budget-friendly venues
-	
-	">
-	<meta name="description" content="Discover a Flavorful Journey
-
-	At Forks and Spoons, we're passionate about bringing you unforgettable dining experiences. Our menu is a celebration of exquisite flavors, featuring:
-	
-	Juicy Steaks: Tender, perfectly cooked steaks that melt in your mouth.
-	Succulent Ribs: Fall-off-the-bone ribs, slow-cooked to juicy perfection.
-	Mouthwatering Seafood: Freshly caught seafood prepared with care and expertise.
-	Whether you're a meat lover, seafood enthusiast, or vegetarian, we have something to tantalize your taste buds. Our menu also boasts a variety of delectable sides to complement your meal.
-	
-	Quality and Freshness
-	
-	We believe that great food starts with the finest ingredients. That's why we source only the freshest produce, meats, and seafood. Our skilled chefs prepare each dish with meticulous attention to detail, ensuring that every bite is bursting with flavor.
-	
-	A Warm and Inviting Atmosphere
-	
-	Our restaurant is designed to provide a comfortable and welcoming environment for all our guests. Whether you're dining with friends, family, or colleagues, you'll feel right at home.
-	
-	Join Us Today
-	
-	Experience the ultimate culinary journey at Forks and Spoons. We guarantee that our delicious and satisfying meals will leave you wanting more.">
-
-	<!--link to the CSS files for this menu type-->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="icon" type="image/x-icon" href="logo.png">
-  <meta name="keywords" content="About Forks & Spoons, Our story, Restaurant history, Our chefs, Food philosophy, Wuse restaurant about">
-  <meta name="description" content="Learn about Forks & Spoons - our story, food philosophy, and commitment to serving delicious, affordable meals in Wuse, Abuja.">
+  <title>About Us - Forks & Spoons | Luxury Dining Experience in Wuse, Abuja</title>
+  <meta name="keywords" content="About Forks and Spoons, our story, restaurant history, Nigerian cuisine, fine dining Abuja">
+  <meta name="description" content="Discover the story behind Forks & Spoons - where Nigerian flavors meet contemporary elegance in the heart of Wuse, Abuja.">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka+One&family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
   <style>
     :root {
-      --bubble-yellow: #FFD700;
-      --bubble-pink: #dc4018;
-      --bubble-blue: #FFD700;
-      --bubble-green: #98FB98;
-      --bubble-purple: #BA55D3;
+      --gold-primary: #D4AF37;
+      --gold-secondary: #FFD700;
+      --gold-light: #F8F0C6;
+      --dark-bg: #1A1A1A;
       --text-dark: #333;
       --text-light: #fff;
+      --luxury-accent: #8B4513;
+      --section-bg: #FFFDF5;
     }
     
     * {
@@ -78,50 +36,33 @@ Wuse budget-friendly venues
     
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #FFF5F5;
+      background-color: var(--section-bg);
       color: var(--text-dark);
       overflow-x: hidden;
+      line-height: 1.6;
     }
     
-    /* Bubble animations */
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-    
-    @keyframes bubblePulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-    
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    
-    /* Header styles */
+    /* Header styles - Luxury Edition */
     header {
-      background: linear-gradient(135deg, var(--bubble-pink), var(--bubble-purple));
-      padding: 1rem 2rem;
+      background: var(--dark-bg);
+      padding: 0.8rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      position: relative;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      z-index: 100;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      border-bottom: 2px solid var(--gold-primary);
+      transition: all 0.4s ease;
+    }
+    
+    header.scrolled {
+      padding: 0.5rem 2rem;
+      background: rgba(26, 26, 26, 0.95);
+      backdrop-filter: blur(10px);
     }
     
     .logo {
@@ -131,416 +72,532 @@ Wuse budget-friendly venues
     }
     
     .logo img {
-      height: 80px;
-      width: 80px;
+      height: 70px;
+      width: 70px;
       object-fit: contain;
-      animation: bubblePulse 3s infinite;
+      filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
+      transition: all 0.3s ease;
+    }
+    
+    header.scrolled .logo img {
+      height: 50px;
+      width: 50px;
     }
     
     .logo-text {
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 2rem;
-      color: white;
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
       letter-spacing: 1px;
+      transition: all 0.3s ease;
     }
     
-    /* Navigation */
+    header.scrolled .logo-text {
+      font-size: 1.5rem;
+    }
+    
+    /* Navigation - Luxury Edition */
     .main-nav {
       display: flex;
-      gap: 1.5rem;
+      gap: 0.8rem;
     }
     
     .main-nav a {
-      font-family: 'Bubblegum Sans', cursive;
-      color: white;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
       text-decoration: none;
-      font-size: 1.2rem;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      background-color: var(--bubble-blue);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transform: rotate(-2deg);
+      position: relative;
     }
     
-    .main-nav a:hover {
-      background-color: var(--bubble-yellow);
-      transform: rotate(2deg) scale(1.1);
-      color: var(--text-dark);
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .main-nav a:hover::after,
+    .main-nav a.active::after {
+      width: 80%;
+    }
+    
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--gold-primary);
     }
     
     .hamburger {
       display: none;
-      font-size: 2rem;
-      color: white;
+      font-size: 1.8rem;
+      color: var(--gold-primary);
       background: none;
       border: none;
       cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .hamburger:hover {
+      background: rgba(212, 175, 55, 0.1);
     }
     
     .mobile-nav {
       display: none;
       flex-direction: column;
       width: 100%;
-      background: linear-gradient(135deg, var(--bubble-purple), var(--bubble-pink));
+      background: var(--dark-bg);
       padding: 1rem;
       position: absolute;
       top: 100%;
       left: 0;
-      z-index: 99;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 999;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-top: 1px solid var(--gold-primary);
+      animation: fadeIn 0.4s ease;
     }
     
     .mobile-nav a {
-      font-family: 'Bubblegum Sans', cursive;
-      color: white;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 1rem;
-      margin: 0.5rem 0;
-      border-radius: 50px;
-      background-color: var(--bubble-blue);
+      margin: 0.3rem 0;
+      border-radius: 4px;
+      transition: all 0.3s ease;
       text-align: center;
+      position: relative;
+    }
+    
+    .mobile-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .mobile-nav a:hover::after,
+    .mobile-nav a.active::after {
+      width: 40%;
+    }
+    
+    .mobile-nav a:hover,
+    .mobile-nav a.active {
+      color: var(--gold-primary);
+      background: rgba(255,255,255,0.05);
+    }
+    
+    /* Page Header */
+    .page-header {
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fDB8fHww&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      margin-top: 90px;
+    }
+    
+    .page-header-content {
+      text-align: center;
+      color: white;
+      max-width: 800px;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .page-header-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #D4AF37, #FFD700, #F8F0C6, #FFD700, #D4AF37);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textShine 3s linear infinite;
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+    
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    .breadcrumb a {
+      color: var(--gold-primary);
+      text-decoration: none;
       transition: all 0.3s ease;
     }
     
-    .mobile-nav a:hover {
-      background-color: var(--bubble-yellow);
-      color: var(--text-dark);
+    .breadcrumb a:hover {
+      text-decoration: underline;
     }
     
-    /* About Hero section */
-    .about-hero {
-      padding: 5rem 2rem;
-      text-align: center;
-      background: linear-gradient(135deg, var(--bubble-blue), var(--bubble-green));
-      color: white;
-      position: relative;
-      overflow: hidden;
+    .breadcrumb span {
+      color: var(--text-light);
     }
     
-    .about-hero::before {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      top: -200px;
-      left: -200px;
-      z-index: 0;
-      animation: float 8s ease-in-out infinite;
+    /* About Story Section */
+    .about-story {
+      padding: 6rem 2rem;
+      background: var(--section-bg);
     }
     
-    .about-hero::after {
-      content: "";
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      bottom: -150px;
-      right: -150px;
-      z-index: 0;
-      animation: float 6s ease-in-out infinite reverse;
-    }
-    
-    .about-hero-content {
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .about-hero-title {
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 4rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-      animation: bubblePulse 3s infinite;
-    }
-    
-    .about-hero-subtitle {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    
-    /* Our Story section */
-    .our-story {
-      padding: 5rem 2rem;
-      background-color: white;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .our-story::before {
-      content: "";
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background-color: var(--bubble-yellow);
-      border-radius: 50%;
-      top: -100px;
-      right: -100px;
-      opacity: 0.2;
-      z-index: 0;
-      animation: float 7s ease-in-out infinite;
-    }
-    
-    .story-content {
-      max-width: 1000px;
+    .story-container {
+      max-width: 1200px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      gap: 4rem;
       align-items: center;
-      position: relative;
-      z-index: 1;
     }
     
     .story-image {
       position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
     
     .story-image img {
       width: 100%;
-      border-radius: 20px;
-      box-shadow: 15px 15px 0 rgba(0,0,0,0.1);
-      transform: rotate(-3deg);
-      transition: transform 0.3s ease;
+      height: auto;
+      display: block;
+      transition: all 0.5s ease;
     }
     
     .story-image:hover img {
-      transform: rotate(0deg) scale(1.05);
+      transform: scale(1.05);
     }
     
-    .story-image::before {
-      content: "";
+    .story-image::after {
+      content: '';
       position: absolute;
-      width: 100px;
-      height: 100px;
-      background-color: var(--bubble-pink);
-      border-radius: 50%;
-      top: -30px;
-      left: -30px;
-      opacity: 0.3;
-      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0,0,0,0) 100%);
+      pointer-events: none;
     }
     
-    .story-text {
-      padding: 1rem;
-    }
-    
-    .section-title {
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 3rem;
-      color: var(--bubble-pink);
+    .story-content h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+      color: var(--dark-bg);
+      position: relative;
+      display: inline-block;
     }
     
-    .section-subtitle {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.5rem;
-      color: var(--bubble-blue);
+    .story-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--gold-primary);
+    }
+    
+    .story-content p {
       margin-bottom: 1.5rem;
-    }
-    
-    .story-text p {
       font-size: 1.1rem;
       line-height: 1.8;
-      margin-bottom: 1.5rem;
+      color: #555;
     }
     
-    /* Our Team section */
-    .our-team {
-      padding: 5rem 2rem;
-      background-color: #FFF5F5;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+    /* Values Section */
+    .values-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
     }
     
-    .our-team::before {
-      content: "";
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background-color: var(--bubble-purple);
-      border-radius: 50%;
-      bottom: -200px;
-      left: -200px;
-      opacity: 0.2;
-      z-index: 0;
-      animation: float 8s ease-in-out infinite reverse;
-    }
-    
-    .team-content {
+    .values-container {
       max-width: 1200px;
       margin: 0 auto;
-      position: relative;
-      z-index: 1;
+      text-align: center;
     }
     
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    
-    .team-member {
-      background-color: white;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 10px 10px 0 rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
-      transform: rotate(-1deg);
-    }
-    
-    .team-member:hover {
-      transform: rotate(1deg) scale(1.05);
-      box-shadow: 15px 15px 0 rgba(0,0,0,0.1);
-    }
-    
-    .team-member img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 0 auto 1.5rem;
-      border: 5px solid var(--bubble-yellow);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .team-member h3 {
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 1.5rem;
-      color: var(--bubble-pink);
-      margin-bottom: 0.5rem;
-    }
-    
-    .team-member p {
-      font-family: 'Fredoka One', cursive;
-      color: var(--bubble-blue);
-      margin-bottom: 1rem;
-    }
-    
-    .team-social {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    
-    .team-social a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 35px;
-      height: 35px;
-      background-color: var(--bubble-blue);
-      border-radius: 50%;
-      color: white;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-    
-    .team-social a:hover {
-      background-color: var(--bubble-pink);
-      transform: translateY(-5px);
-    }
-    
-    /* Our Values section */
-    .our-values {
-      padding: 5rem 2rem;
-      background-color: white;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .our-values::after {
-      content: "";
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background-color: var(--bubble-green);
-      border-radius: 50%;
-      bottom: -100px;
-      right: -100px;
-      opacity: 0.2;
-      z-index: 0;
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    .values-content {
-      max-width: 1000px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
+    .values-container h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--gold-primary);
     }
     
     .values-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
+      gap: 2.5rem;
     }
     
     .value-card {
-      background-color: #FFF5F5;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 10px 10px 0 rgba(0,0,0,0.05);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 2.5rem 2rem;
       transition: all 0.3s ease;
-      transform: rotate(1deg);
+      border: 1px solid rgba(212, 175, 55, 0.2);
       position: relative;
       overflow: hidden;
     }
     
-    .value-card:hover {
-      transform: rotate(-1deg) scale(1.05);
-      box-shadow: 15px 15px 0 rgba(0,0,0,0.1);
+    .value-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0,0,0,0) 100%);
+      pointer-events: none;
     }
     
-    .value-card::before {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-color: var(--bubble-yellow);
-      border-radius: 50%;
-      top: -15px;
-      right: -15px;
-      opacity: 0.3;
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      border-color: var(--gold-primary);
     }
     
     .value-icon {
-      font-size: 3rem;
-      color: var(--bubble-pink);
+      font-size: 2.5rem;
+      color: var(--gold-primary);
       margin-bottom: 1.5rem;
     }
     
     .value-card h3 {
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 1.8rem;
-      color: var(--bubble-blue);
+      font-family: 'Cinzel', serif;
       margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
     
     .value-card p {
-      font-size: 1.1rem;
-      line-height: 1.8;
+      font-size: 1rem;
+      line-height: 1.7;
     }
     
-    /* Footer */
-    footer {
-      background: linear-gradient(135deg, var(--bubble-purple), var(--bubble-pink));
+    /* Team Section */
+    .team-section {
+      padding: 6rem 2rem;
+      background: var(--section-bg);
+    }
+    
+    .team-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .team-container h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--dark-bg);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .team-container h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--gold-primary);
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2.5rem;
+    }
+    
+    .team-member {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    
+    .team-member-image {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .team-member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+    
+    .team-member:hover .team-member-image img {
+      transform: scale(1.1);
+    }
+    
+    .team-member-info {
+      padding: 1.5rem;
+    }
+    
+    .team-member-info h3 {
+      font-family: 'Cinzel', serif;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    
+    .team-member-info p {
+      color: var(--gold-primary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .team-member-info .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .team-member-info .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background-color: var(--gold-light);
+      border-radius: 50%;
+      color: var(--gold-primary);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .team-member-info .social-links a:hover {
+      background-color: var(--gold-primary);
       color: white;
-      padding: 3rem 2rem;
+      transform: translateY(-3px);
+    }
+    
+    /* Call to Action */
+    .about-cta {
+      padding: 6rem 2rem;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+    
+    .cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .cta-container h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--gold-primary);
+    }
+    
+    .cta-container p {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-primary {
+      background: var(--gold-primary);
+      color: var(--dark-bg);
+      border: 2px solid var(--gold-primary);
+    }
+    
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--gold-primary);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--gold-primary);
+      border: 2px solid var(--gold-primary);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--gold-primary);
+      color: var(--dark-bg);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    }
+    
+    /* Footer - Luxury Edition */
+    footer {
+      background: var(--dark-bg);
+      color: white;
+      padding: 4rem 2rem 2rem;
       text-align: center;
       position: relative;
+      border-top: 2px solid var(--gold-primary);
     }
     
     .footer-content {
@@ -548,39 +605,39 @@ Wuse budget-friendly venues
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+      gap: 2.5rem;
       position: relative;
       z-index: 1;
     }
     
     .footer-column h3 {
-      font-family: 'Bubblegum Sans', cursive;
+      font-family: 'Cinzel', serif;
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
-      text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+      color: var(--gold-primary);
     }
     
     .footer-column p,
     .footer-column a {
       font-size: 1rem;
       line-height: 1.8;
-      color: white;
-      margin-bottom: 0.5rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.8rem;
       display: block;
       text-decoration: none;
       transition: all 0.3s ease;
+      font-weight: 300;
     }
     
     .footer-column a:hover {
-      color: var(--bubble-yellow);
-      transform: translateX(5px);
+      color: var(--gold-primary);
     }
     
     .social-icons {
       display: flex;
       justify-content: center;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
     
     .social-icons a {
@@ -589,76 +646,74 @@ Wuse budget-friendly venues
       justify-content: center;
       width: 40px;
       height: 40px;
-      background-color: white;
+      background-color: transparent;
+      border: 1px solid var(--gold-primary);
       border-radius: 50%;
-      color: var(--bubble-pink);
-      font-size: 1.2rem;
+      color: var(--gold-primary);
+      font-size: 1.1rem;
       transition: all 0.3s ease;
     }
     
     .social-icons a:hover {
-      background-color: var(--bubble-yellow);
-      color: white;
-      transform: translateY(-5px);
+      background-color: var(--gold-primary);
+      color: var(--dark-bg);
+      transform: translateY(-3px);
     }
     
     .copyright {
-      margin-top: 3rem;
+      margin-top: 4rem;
       padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.2);
+      border-top: 1px solid rgba(255,255,255,0.1);
       font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
     }
     
-    /* Floating bubbles */
-    .floating-bubbles {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 0;
-    }
-    
-    .floating-bubbles li {
-      position: absolute;
-      list-style: none;
-      display: block;
-      width: 20px;
-      height: 20px;
-      background: rgba(255, 255, 255, 0.2);
-      bottom: -150px;
-      animation: bubbleRise 15s infinite linear;
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gold-primary);
+      color: var(--dark-bg);
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 99;
     }
     
-    @keyframes bubbleRise {
-      0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-      }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background: var(--dark-bg);
+      color: var(--gold-primary);
+      transform: translateY(-5px);
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes textShine {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
     }
     
     /* Responsive styles */
-    @media (max-width: 1024px) {
-      .about-hero-title {
-        font-size: 3rem;
-      }
-      
-      .about-hero-subtitle {
-        font-size: 1.2rem;
-      }
-      
-      .section-title {
-        font-size: 2.5rem;
-      }
-    }
-    
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .main-nav {
         display: none;
       }
@@ -667,58 +722,99 @@ Wuse budget-friendly venues
         display: block;
       }
       
-      .story-content {
+      .story-container {
         grid-template-columns: 1fr;
       }
       
       .story-image {
-        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
       }
       
-      .section-title {
-        font-size: 2rem;
-      }
-      
-      .section-subtitle {
-        font-size: 1.2rem;
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
       }
     }
     
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1.5rem;
+      }
+      
       .logo-text {
         font-size: 1.5rem;
       }
       
-      .about-hero-title {
-        font-size: 2.5rem;
+      .logo img {
+        height: 60px;
+        width: 60px;
       }
       
-      .team-member {
-        padding: 1.5rem;
+      .page-header-title {
+        font-size: 2.8rem;
       }
       
-      .value-card {
-        padding: 1.5rem;
+      .about-story,
+      .values-section,
+      .team-section,
+      .about-cta {
+        padding: 4rem 1.5rem;
+      }
+      
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        padding: 0.7rem 1rem;
+      }
+      
+      .logo-text {
+        font-size: 1.3rem;
+      }
+      
+      .logo img {
+        height: 50px;
+        width: 50px;
+      }
+      
+      .page-header-title {
+        font-size: 2.2rem;
+      }
+      
+      .about-story,
+      .values-section,
+      .team-section,
+      .about-cta {
+        padding: 3rem 1rem;
+      }
+      
+      .story-content h2,
+      .values-container h2,
+      .team-container h2,
+      .cta-container h2 {
+        font-size: 2rem;
+      }
+      
+      footer {
+        padding: 3rem 1rem 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Floating bubbles background -->
-  <ul class="floating-bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+  <!-- Back to top button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
   
-  <header>
+  <header id="mainHeader">
     <div class="logo">
       <img src="https://forksandspoons.com.ng/logo.png" alt="Forks & Spoons Logo">
       <span class="logo-text">Forks & Spoons</span>
@@ -728,44 +824,42 @@ Wuse budget-friendly venues
     </button>
     <nav class="main-nav">
       <a href="https://forksandspoons.com.ng/index.html">Home</a>
-      <a href="https://forksandspoons.com.ng/About.html">About</a>
-      <a href="menu.html">Menu</a>
+      <a href="https://forksandspoons.com.ng/About.html" class="active">About</a>
+      <a href="https://forksandspoons.com.ng/menu.html">Menu</a>
       <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
     </nav>
     <nav class="mobile-nav" id="mobileMenu">
       <a href="https://forksandspoons.com.ng/index.html">Home</a>
-      <a href="https://forksandspoons.com.ng/About.html">About</a>
-      <a href="menu.html">Menu</a>
+      <a href="https://forksandspoons.com.ng/About.html" class="active">About</a>
+      <a href="https://forksandspoons.com.ng/menu.html">Menu</a>
       <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
     </nav>
   </header>
   
  
   
-  <section class="our-story">
-    <div class="story-content">
-      <div class="story-text">
-        <h2 class="section-title">In The Heart of Wuse </h2>
+  <section class="about-story">
+    <div class="story-container">
+      <div class="story-image"> <BR><BR>
+        <img src="https://github.com/Gigx267/Forks-Spoon-/blob/main/jres.gif?raw=true" alt="Forks & Spoons Restaurant Interior">
+      </div>
+      <div class="story-content">
+           <h2 class="section-title">In The Heart of Wuse </h2>
         <p class="section-subtitle">Visit us at Forks and spoons and indulge in easy culinary experience. We guarantee that our delicious and bud tasty meals will leave you coming back for more.   </p>
         <p>Located in the heart of Wuse, Abuja, Forks & Spoons is your go-to destination for delicious, budget-friendly meals that don't compromise on quality or taste.
 
 Our chefs prepare each dish with fresh, locally-sourced ingredients, creating flavorful meals that will satisfy your cravings without breaking the bank.
 
 Whether you're looking for a quick lunch, a family dinner, or catering for your next event, we've got you covered! </p>
-        
-      </div>
-      <div class="story-image">
-        <img src="sdd.gif" alt="Our founder in the early days">
       </div>
     </div>
   </section>
   
- 
-  <section class="our-values">
+ <section class="our-values">
   <div class="values-content">
     <h2 class="section-title">Our Values</h2>
     <p class="section-subtitle">
-      At Forks and Spoons, every dish is crafted to be hot, delicious, and bursting with taste. We are dedicated to serving food that excites your senses and leaves you craving more.
+      At Forks and Spoons, every dish is crafted to be hot, delicious, <BR><BR> and bursting with taste. We are dedicated to serving food that excites your senses and leaves you craving more.
     </p>
     
     <div class="values-grid">
@@ -805,35 +899,38 @@ Whether you're looking for a quick lunch, a family dinner, or catering for your 
 </section>
  
   
+  
   <footer>
     <div class="footer-content">
       <div class="footer-column">
-        <h3>Location</h3>
-        <p>Ground Floor, ATC Plaza, Aminu Kano Crescent, Wuse II, Abuja.</p>
-        <p>Abuja, Nigeria</p>
-        <p>Open: 10am - 11pm Daily</p>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <a href="https://forksandspoons.com.ng/index.html">Home</a>
-        <a href="https://forksandspoons.com.ng/About.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="https://forksandspoons.com.ng/Contact.html">Contact</a>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-        <a href="tel:+2348123456789">+234 812 345 6789</a>
-     
-        
+        <h3>Forks & Spoons</h3>
+        <p>Where Nigerian flavors meet contemporary elegance in the heart of Wuse, Abuja.</p>
         <div class="social-icons">
-   
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tripadvisor"></i></a>
         </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 24 Aminu Kano Crescent, Wuse II, Abuja</p>
+        <p><i class="fas fa-phone"></i> +234 803 456 7890</p>
+        <p><i class="fas fa-envelope"></i> info@forksandspoons.com.ng</p>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 11am - 11pm</p>
+        <p>Saturday: 10am - 12am</p>
+        <p>Sunday: 10am - 10pm</p>
       </div>
     </div>
     
-   
+    <div class="copyright">
+      <p>&copy; 2023 Forks & Spoons. All Rights Reserved.</p>
+    </div>
   </footer>
   
   <script>
@@ -843,6 +940,7 @@ Whether you're looking for a quick lunch, a family dinner, or catering for your 
     
     hamburger.addEventListener('click', () => {
       mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+      document.body.style.overflow = mobileMenu.style.display === 'flex' ? 'hidden' : '';
     });
     
     // Close mobile menu when clicking a link
@@ -850,12 +948,49 @@ Whether you're looking for a quick lunch, a family dinner, or catering for your 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.style.display = 'none';
+        document.body.style.overflow = '';
       });
     });
     
-    // Animate elements when they come into view
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mobileMenu.style.display === 'flex' && 
+          !e.target.closest('.mobile-nav') && 
+          !e.target.closest('.hamburger')) {
+        mobileMenu.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Header scroll effect
+    const header = document.getElementById('mainHeader');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Animate elements on scroll
     const animateOnScroll = () => {
-      const elements = document.querySelectorAll('.story-content, .team-grid, .values-grid');
+      const elements = document.querySelectorAll('.story-image, .story-content, .value-card, .team-member');
       
       elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
@@ -869,9 +1004,9 @@ Whether you're looking for a quick lunch, a family dinner, or catering for your 
     };
     
     // Set initial styles for animated elements
-    document.querySelectorAll('.story-content, .team-grid, .values-grid').forEach(el => {
+    document.querySelectorAll('.story-image, .story-content, .value-card, .team-member').forEach(el => {
       el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
+      el.style.transform = 'translateY(20px)';
       el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     });
     
@@ -881,5 +1016,3 @@ Whether you're looking for a quick lunch, a family dinner, or catering for your 
   </script>
 </body>
 </html>
-
-
